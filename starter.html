@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chris</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End Fonts -->
+
+    <!-- Font Awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- End -->
+
+    <style>
+      :root {
+        --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+          "Noto Color Emoji";
+        --heading-font: "Nunito", sans-serif;
+        --nav-font: "Inter", sans-serif;
+      }
+      :root {
+        --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
+        --heading-color: #2d465e; /* Color for headings, subheadings and title throughout the website */
+        --accent-color: #281845; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+        --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: var(--heading-color);
+        font-family: var(--heading-font);
+      }
+      a {
+        color: var(--heading-color);
+        font-family: var(--nav-font);
+      }
+      .default-font {
+        font-family: var(--default-font);
+      }
+      button {
+        font-family: var(--default-font);
+      }
+      .hero-bg {
+        background: linear-gradient(
+          135deg,
+          color-mix(in srgb, #281845, transparent 90%) 50%,
+          color-mix(in srgb, #281845, transparent 98%) 100%,
+          transparent 90%
+        );
+      }
+      .tabs-bg {
+        background-color: color-mix(
+          in srgb,
+          var(--default-color),
+          transparent 96%
+        );
+      }
+      .badge-bg {
+        background-color: color-mix(
+          in srgb,
+          var(--accent-color),
+          transparent 92%
+        );
+      }
+
+      .icon-bg {
+        background-color: color-mix(
+          in srgb,
+          var(--contrast-color),
+          transparent 70%
+        );
+      }
+      .text {
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+      }
+      .box-shadow {
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+      }
+      .bg-main {
+        background: #a588c2;
+        background-color: #a588c2;
+      }
+      .main-color {
+        color: #a588c2;
+      }
+      .secondary-color {
+        color: #2d465e;
+      }
+      .bg-default {
+        background-color: #212529;
+        background: #212529;
+      }
+      .bg-secondary {
+        background-color: #fff3e2;
+        background: #fff3e2;
+      }
+      .text-default {
+        color: #212529;
+      }
+      .nav-a:hover {
+        color: #a588c2;
+      }
+
+      .bg-dotted {
+        background-color: #EAE8ED;
+
+        background-image: radial-gradient(
+          circle,
+          rgba(156, 108, 204, 0.4) 1px,
+          transparent 1px
+        );
+        background-size: 30px 30px;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Main Section -->
+      <section
+        id="hero"
+        class="w-full h-[100vh] pb-[60px] pt-[120px] lg:pt-[160px] w-full h-screen bg-dotted relative"
+      >
+        <!-- Header Section  -->
+        <header
+          class="absolute px-2 lg:px-0 py-5 z-10 text-black flex items-center fixed top-0 left-0 right-0"
+        >
+          <div
+            class="flex items-center justify-between bg-white rounded-[50px] py-[5px] px-[25px] flex items-center box-shadow relative w-full max-w-[1140px] m-auto"
+          >
+            <a href="leading-1 pl-[5px] flex items-center mr-auto xl:mr-0">
+              <h1 class="secondary-color text-2xl font-medium">tailLaunch</h1>
+            </a>
+            <nav class="hidden lg:flex justify-between">
+              <ul class="flex list-none items-center">
+                <li class="py-5 px-4 text-base">
+                  <a href="#hero" class="nav-a">Home</a>
+                </li>
+                <li class="py-5 px-4 text-base">
+                  <a href="#about-us" class="nav-a">About</a>
+                </li>
+                <li class="py-5 px-4 text-base">
+                  <a href="#feature-section" class="nav-a">Features</a>
+                </li>
+                <li class="py-5 px-4 text-base">
+                  <a href="#services" class="nav-a">Services</a>
+                </li>
+                <li class="py-5 px-4 text-base">
+                  <a href="#pricing" class="nav-a">Pricing</a>
+                </li>
+                <li class="py-5 px-4 text-base">
+                  <a href="#contact" class="nav-a">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <button
+              class="hidden lg:block bg-main py-[8px] px-[20px] text-white ml-[30px] rounded-[50px]"
+            >
+              Get Started
+            </button>
+
+            <!-- Burger Icon -->
+            <div class="flex justify-center items-center gap-4 lg:hidden">
+              <button
+                class="bg-main py-[8px] px-[20px] text-white ml-[30px] rounded-[50px]"
+              >
+                Get Started
+              </button>
+              <div class="block lg:hidden flex flex-col gap-1" id="burger-icon">
+                <div class="w-[20px] h-[2px] bg-default"></div>
+                <div class="w-[20px] h-[2px] bg-default"></div>
+                <div class="w-[20px] h-[2px] bg-default"></div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div
+          class="w-full h-auto mt-10 bg-dotted flex items-center justify-center px-10"
+        >
+          <!-- Content Container -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-6xl mx-auto"
+          >
+            <!-- Left Side: Text Content -->
+            <div class="text-white">
+              <h1 class="text-4xl font-bold text-[#a588c2] mb-4">
+                Connected Callers
+              </h1>
+              <p class="text-lg text-gray-500">
+                Explore a futuristic network where systems and devices are
+                interconnected, enabling seamless calling flow.
+              </p>
+            </div>
+
+            <!-- Right Side: SVG Illustration -->
+            <div class="relative w-full h-80 flex justify-center">
+              <img src="/assets/images/Group 30.png" class="sm:h-[400px] sm:w-[400px]" alt="group 30" />
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- Mobile  Menu -->
+
+    <header
+      id="mobileMenu"
+      class="fixed inset-0 hidden w-full h-full bg-black bg-opacity-50 z-20 flex flex-col"
+    >
+      <!-- Close Button Section -->
+      <div class="w-[90%] m-auto mb-0 flex justify-end py-2">
+        <button id="closeButton" class="text-white text-2xl font-bold">
+          <i class="fa-solid fa-x"></i>
+        </button>
+      </div>
+
+      <!-- Navigation Section -->
+      <div
+        class="bg-white w-[90%] h-[80%] m-auto mt-0 rounded-[10px] p-6 shadow-lg flex justify-center items-center"
+      >
+        <!-- Navigation Links -->
+        <nav class="w-full text-center">
+          <ul class="space-y-4">
+            <li>
+              <a
+                href="#hero"
+                class="mobile-menu text-lg font-semibold text-gray-700 hover:text-blue-500"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about-us"
+                class="mobile-menu text-lg font-semibold text-gray-700 hover:text-blue-500"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#feature-section"
+                class="mobile-menu text-lg font-semibold text-gray-700 hover:text-blue-500"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="mobile-menu text-lg font-semibold text-gray-700 hover:text-blue-500"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#pricing"
+                class="mobile-menu text-lg font-semibold text-gray-700 hover:text-blue-500"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="mobile-menu text-lg font-semibold text-gray-700 hover:text-blue-500"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("main-animation");
+                observer.unobserve(entry.target); // Stop observing once animated
+              }
+            });
+          },
+          {
+            threshold: 0.2, // Trigger when 20% of the section is visible
+          }
+        );
+
+        document.querySelectorAll(".animate-on-scroll").forEach((element) => {
+          observer.observe(element);
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const emblaNode = document.querySelector(".embla");
+        const embla = EmblaCarousel(emblaNode, {
+          loop: true,
+          align: "start",
+          containScroll: "trimSnaps",
+          autoplay: true,
+          speed: 5,
+        });
+
+        setInterval(() => embla.scrollNext(), 2000); // Auto-scroll every 2 sec
+      });
+    </script>
+
+    <!-- Desktop Nav Smoth Scroll -->
+    <script>
+      const navLinks = document.querySelectorAll("nav a");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          const targetId = this.getAttribute("href");
+
+          if (targetId.startsWith("#")) {
+            // Check if it's an internal link
+            e.preventDefault(); // Prevent instant jump
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          }
+        });
+      });
+    </script>
+
+    <!-- Tabs -->
+    <script>
+      // Toggle Modal Visibility
+      const closeButton = document.getElementById("closeButton");
+
+      const burgerIcon = document.getElementById("burger-icon");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      burgerIcon.addEventListener("click", () => {
+        mobileMenu.classList.remove("hidden");
+      });
+
+      // Hide modal function
+      closeButton.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+
+      const menuLinks = document.querySelectorAll(".mobile-menu");
+
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden"); // Hide the menu
+        });
+      });
+    </script>
+
+    <!-- Video Modal -->
+    <script>
+      document
+        .getElementById("openModal")
+        .addEventListener("click", function () {
+          document.getElementById("videoModal").classList.remove("hidden");
+        });
+
+      document
+        .getElementById("closeModal")
+        .addEventListener("click", function () {
+          document.getElementById("videoModal").classList.add("hidden");
+          stopYouTubeVideo();
+        });
+
+      document
+        .getElementById("videoModal")
+        .addEventListener("click", function (e) {
+          if (e.target === this) {
+            this.classList.add("hidden");
+            stopYouTubeVideo();
+          }
+        });
+
+      function stopYouTubeVideo() {
+        const iframe = document.getElementById("youtubeIframe");
+        iframe.src = iframe.src; // Reset iframe source to stop video
+      }
+    </script>
+
+    <!-- Font Awsome -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+      integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- End -->
+  </body>
+</html>
