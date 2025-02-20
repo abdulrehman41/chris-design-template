@@ -227,6 +227,106 @@
       </section>
     </main>
 
+    <!-- Footer -->
+    <footer class="max-w-[1140px] m-auto py-12 px-8 md:px-5">
+        <div
+          class="text-center sm:text-left grid grid-cols-1 sm:grid-cols-[1.5fr_1fr_1fr_1fr] gap-5"
+        >
+          <div class="flex flex-col justify-between md:col-span-1">
+            <a href="leading-1 pl-[5px] flex items-center mr-auto xl:mr-0">
+              <h1 class="secondary-color text-2xl font-bold mb-5 md:mb-0">
+                tailLaunch
+              </h1>
+            </a>
+            <div class="flex flex-col gap-2">
+              <p class="text default-font text-base text">A108 Adam Street</p>
+              <p class="text default-font text-base text">New York, NY 5402334</p>
+              <p class="text default-font text-base text">+1 555 555 5453</p>
+              <p class="text default-font text-base text">info@example.com</p>
+            </div>
+          </div>
+  
+          <div>
+            <h1 class="secondary-color text-base font-bold mb-2 pb-3">
+              Useful Links
+            </h1>
+            <ul class="mt-2 space-y-2 text-sm">
+              <li class="pb-2.5 text-sm">
+                <a href="#" class="hover:underline">Home</a>
+              </li>
+              <li class="pb-2.5 text-sm">
+                <a href="#" class="hover:underline">About us</a>
+              </li>
+              <li class="pb-2.5 text-sm">
+                <a href="#" class="hover:underline">Services</a>
+              </li>
+              <li class="pb-2.5 text-sm">
+                <a href="#" class="hover:underline">Terms of service</a>
+              </li>
+              <li class="pb-2.5 text-sm">
+                <a href="#" class="hover:underline">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div>
+            <h1 class="secondary-color text-base font-bold mb-2 pb-3">
+              Our Services
+            </h1>
+            <ul class="mt-2 space-y-2 text-sm">
+              <li class="pb-2.5 text-sm">
+                <a href="#" class="hover:underline">Web Design</a>
+              </li>
+              <li class="pb-2.5 text-sm">
+                <a href="#" class="hover:underline">Web Development</a>
+              </li>
+              <li class="pb-2.5 text-sm">
+                <a href="#" class="hover:underline">Product Management</a>
+              </li>
+              <li class="pb-2.5 text-sm">
+                <a href="#" class="hover:underline">Marketing</a>
+              </li>
+              <li class="pb-2.5 text-sm">
+                <a href="#" class="hover:underline">Graphic Design</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div>
+            <h1 class="secondary-color text-base font-bold mb-2 pb-3">
+              Hic solutasetp
+            </h1>
+            <ul class="mt-2 space-y-2 text-sm">
+              <li class="pb-2.5 text-sm">
+                <a href="#" class="hover:underline">Molestiae accusamus iure</a>
+              </li>
+              <li class="pb-2.5 text-sm">
+                <a href="#" class="hover:underline">Excepturi dignissimos</a>
+              </li>
+              <li class="pb-2.5 text-sm">
+                <a href="#" class="hover:underline">Suscipit distinctio</a>
+              </li>
+              <li class="pb-2.5 text-sm">
+                <a href="#" class="hover:underline">Dilecta</a>
+              </li>
+              <li class="pb-2.5 text-sm">
+                <a href="#" class="hover:underline">Sit quas consectetur</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="border-[1px] border-gray-300 mt-10 mb-2"></div>
+        <div class="flex gap-1 sm:gap-2 justify-center items-center">
+          <p class="!text-[12px]">© Copyright</p>
+          <h5 class="!text-[12px] main-color font-bold">tailLaunch</h5>
+          <p class="!text-[12px]">All Rights Reserved</p>
+        </div>
+        <div class="text-center">
+          <p class="">Designed by <span class="font-bold">AR</span></p>
+        </div>
+      </footer>
+
     <!-- Mobile  Menu -->
 
     <header
@@ -313,21 +413,6 @@
         document.querySelectorAll(".animate-on-scroll").forEach((element) => {
           observer.observe(element);
         });
-      });
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const emblaNode = document.querySelector(".embla");
-        const embla = EmblaCarousel(emblaNode, {
-          loop: true,
-          align: "start",
-          containScroll: "trimSnaps",
-          autoplay: true,
-          speed: 5,
-        });
-
-        setInterval(() => embla.scrollNext(), 2000); // Auto-scroll every 2 sec
       });
     </script>
 
